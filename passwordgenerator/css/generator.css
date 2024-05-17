@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #2d9dbb, #e254c1);
+}
+.box {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+  border: 1px solid #3a1835;
+  border-radius: 40px;
+}
+.h1 {
+  text-align: center;
+  color: #3a1835;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px 3px #5b5454;
+}
+.readonly {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#generatedPassword {
+  width: 40vh;
+  height: 3vh;
+  border: none;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+#copypassword {
+  color: #e254c1;
+  width: 15%;
+  height: 3vh;
+  border: none;
+  border-radius: 8px;
+}
+.passlength {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+#lengthpassword {
+  padding-left: 40px;
+  font-size: 20px;
+  margin-right: 100px;
+  text-align: left;
+  height: 3vh;
+}
+#passwordLength {
+  width: 12%;
+  border: none;
+  height: 3vh;
+  border-radius: 10px;
+  padding: 5px;
+}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+#generateBtn {
+  width: 30%;
+  align-self: center;
+  font-size: 18px;
+  color: #3a1835;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+}

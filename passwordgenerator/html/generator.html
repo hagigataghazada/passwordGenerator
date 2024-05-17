@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/generator.css" />
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="h1">Password Generator</div>
+      <div class="readonly">
+        <input type="text" id="generatedPassword" readonly />
+        <button id="copypassword"><i class="bi bi-clipboard"></i></button>
+      </div>
+      <div class="passlength">
+        <label id="lengthpassword" for="passwordLength">Password Length:</label>
+        <input type="number" id="passwordLength" value="20" />
+      </div>
+      <div class="checkbox">
+        <div class="lettercheck">
+          <input
+            type="checkbox"
+            id="letters"
+            name="characters3"
+            value="letters"
+            checked
+          />
+          <label for="letters">Letters</label>
+        </div>
+        <div class="numbercheck">
+          <input
+            type="checkbox"
+            id="numbers"
+            name="characters1"
+            value="numbers"
+          />
+          <label for="numbers">Numbers</label>
+        </div>
+        <div class="symbolcheck">
+          <input
+            type="checkbox"
+            id="symbols"
+            name="characters2"
+            value="symbols"
+          />
+          <label for="symbols">Symbols</label>
+        </div>
+      </div>
+      <button id="generateBtn">Generate Password</button>
+    </div>
+    <script src="../javascript/generator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  </body>
+</html>
